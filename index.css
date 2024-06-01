@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+.card{
+    border: none;
+}
+.crousel-image img{
+    height: 40vh;
+}
+.read{
+    height:40vh;
+    background-color: red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.read p{
+    text-align: center;
+    width: 200px;
+    font-size: 10px;
+
+}
+.icons{
+    width: 3vw;
+}
+.read .icon{
+    font-size:30px;
+}
+.read button{
+    margin-top: 10px;
+    color: red;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    z-index: 9;
+    width: 400px;
+}
+.form-container {
+    padding: 20px;
+    background-color: white;
+}
+.form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-bottom-color: #007bff;
+}
+.scrolling-photos {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.scrolling-photos img {
+    
+    width: 100vw;
+    
+    margin: 0 10px;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.clickable-column {
+    cursor: pointer;
+    width: 16vw;
+}
+
+.clickable-column:hover {
+    background-color: #f0f0f0;
+}
+.left-section img {
+    width: 90%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+.box {
+    height:auto;
+     width:15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius:20px;
+    background-color: #f8f9fa;
+}
+.box i{
+    color: red;
+    font-size: 20px;
+   
+    
+}
+.containers{
+    height: auto;
+}
+.text{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text .tag{
+    color: red;
+    background-color: white;
+    margin-right: 0.5rem;
+    
+}
+.content hr,h6,p,h5{
+    margin:0;
+}
+
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+    
+
+}
+
+    @media(max-width:800px){
+        .clickable-column{
+            width:60vw;
+        }
+        .box{
+            width:30vw;
+            text-align: center;
+        }
+        .containers{
+            display: none;
+        }
+        .icons{
+          width:6vw;
+        }
+    }
