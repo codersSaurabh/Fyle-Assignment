@@ -14,6 +14,9 @@ html,body{
 .crousel-image img{
     height: 40vh;
 }
+.exellence{
+    display:flex;
+}
 .read{
     height:40vh;
     background-color: red;
@@ -148,6 +151,9 @@ html,body{
         .box{
             width:30vw;
             text-align: center;
+        }
+        .exellence{
+            flex-direction:column;
         }
         .containers{
             display: none;
